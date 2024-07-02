@@ -29,14 +29,31 @@ header {
   border: 1px solid black;
   border-right-color: white;
 }
-.nav__name {
+.nav__name a{
   font-weight: bold;
-  margin: 0 10px;
+  margin: 5px 10px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.nav__name a:hover {
+  color: #65cbff;
 }
 .nav__title {
   display: flex;
   align-items: center;
 }
+.nav__title a {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.nav__title a:hover {
+  color: #65cbff;
+}
+
 p {
   margin: 0 15px;
 }
@@ -44,13 +61,21 @@ p {
   /* position: relative; */
   left: 75%;
 }
-.nav__icon {
+/* .nav__icon a{
   color: white;
+  transition: all 0.5s;
 }
+.nav__icon a:hover{
+  color: #65cbff !important;
+} */
 i {
   font-size: 30px;
   color: white;
   margin: 0 15px;
+  transition: all 0.5s;
+}
+i:hover{
+  color: #65cbff !important;
 }
 .icon__search {
   border: 1px solid black;
@@ -74,7 +99,7 @@ i {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-115%, 70%);
+  transform: translate(-85%, 65%);
 }
 .title .banner__name {
   font-size: 180px;
@@ -124,6 +149,10 @@ i {
   line-height: 3;
 }
 /* offers */
+.offers__color{
+  background-color: #f2f0f0;
+  padding-right: 0;
+}
 .offers__title {
   position: relative;
   text-align: center;
@@ -281,7 +310,6 @@ footer {
   color: #3954d9;
   margin-bottom: 50px;
   font-size: 25px;
-
 }
 .link__title {
   display: flex;
@@ -292,13 +320,13 @@ footer {
   padding: 5px 0;
 }
 
-.footer__connected{
+.footer__connected {
   margin-left: 4rem;
 }
-.link__icon{
+.link__icon {
   display: flex;
 }
-.link__icon i{
+.link__icon i {
   border: 1px solid #fff;
   background-color: #fff;
   width: 42px;
@@ -308,24 +336,24 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin:0 4px;
-  color: #000; 
+  margin: 0 4px;
+  color: #000;
 }
-.contact{
+.contact {
   margin-top: 5rem;
 }
-.contact .contact__signup{
+.contact .contact__signup {
   color: #3954d9;
   font-size: 25px;
 }
-.contact input{
+.contact input {
   border: 1px solid black;
   outline: none;
   border-radius: 30px;
   background-color: #2f2f2f;
   color: white;
 }
-.contact .btn__shop{
+.contact .btn__shop {
   position: absolute;
   width: 110px;
   height: 30px;
@@ -341,14 +369,14 @@ footer {
   margin-top: 20px;
   left: 80px;
 }
-.white-line{
+.white-line {
   position: relative;
   top: 8rem;
   width: 100%;
   height: 1px;
   background-color: white;
 }
-.footer__copyright__title{
+.footer__copyright__title {
   position: relative;
   top: 25px;
   display: flex;
